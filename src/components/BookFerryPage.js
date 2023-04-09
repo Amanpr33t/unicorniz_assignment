@@ -7,7 +7,7 @@ import { SingleDatepicker } from "chakra-dayzed-datepicker"
 
 
 const BookFerryPage = () => {
-    
+
     const { getInputProps, getIncrementButtonProps, getDecrementButtonProps } =
         useNumberInput({
             step: 1,
@@ -20,7 +20,7 @@ const BookFerryPage = () => {
     const decAdults = getDecrementButtonProps()
     const inputAdults = getInputProps()
 
-    const incInfants =  getIncrementButtonProps()
+    const incInfants = getIncrementButtonProps()
     const decInfants = getDecrementButtonProps()
     const inputInfants = getInputProps()
     const [date, setDate] = useState(new Date());
@@ -30,7 +30,6 @@ const BookFerryPage = () => {
             <Flex flexDirection={{ base: 'column', lg: 'row' }} justify='center' align='center' mt={{ base: '30px', lg: '0px' }} gap='5px'>
                 <Flex flexDirection='column' w='700px' borderRadius='10px' justify='center' align='center' ml={{ base: '0px', lg: '10px' }} bg='gray.100' p='5px' mb={{ base: '20px', md: '0px' }}>
                     <Heading size='xl' mb={{ base: '50px', md: '70px' }} mr='3px' ml='3px' w={{ base: '100vw', sm: '450px' }} textAlign='center'> Book Your Andaman Ferry</Heading>
-
                     <Flex flexDirection={{ base: 'column', md: 'row' }} align='center'>
                         <Heading fontSize='25px' fontWeight='600' mr={{ base: '0px', md: '90px' }} mb={{ base: '15px', md: '0px' }}> Select Passengers</Heading>
                         <Flex flexDirection={{ base: 'column', sm: 'row' }} ml={{ base: '25px', sm: '0px' }}>
@@ -42,7 +41,6 @@ const BookFerryPage = () => {
                                 <HStack maxW='320px' w='150px' border='2px solid silver' borderRadius='10px'>
                                     <Button {...decAdults} fontSize='35px' pb='8px'>-</Button>
                                     <Input {...inputAdults} textAlign='center' fontSize='25px' fontWeight='600' border='none' />
-
                                     <Button {...incAdults} fontSize='35px' pb='8px'>+</Button>
                                 </HStack>
                             </Flex>
@@ -54,17 +52,12 @@ const BookFerryPage = () => {
                                 <HStack maxW='320px' w='150px' border='2px solid silver' borderRadius='10px' >
                                     <Button {...decInfants} fontSize='35px' pb='8px'>-</Button>
                                     <Input  {...inputInfants} textAlign='center' fontSize='25px' fontWeight='600' border='none' />
-
                                     <Button {...incInfants} fontSize='35px' pb='8px'>+</Button>
                                 </HStack>
                             </Flex>
                         </Flex>
-
                     </Flex>
-
-
                     <Heading fontSize='25px' fontWeight='600' mt={{ base: '40px', md: '70px' }}> Select Trip</Heading>
-
                     <Flex flexDirection={{ base: 'column', md: 'row' }} mt='20px' ml='20px' gap='20px'>
                         <Flex flexDirection='column'>
                             <Heading fontSize='18px' color='gray' fontWeight='600' mb='7px'> From</Heading>
@@ -97,22 +90,15 @@ const BookFerryPage = () => {
                                 onDateChange={setDate}
                             />
                         </Flex>
-
-
                     </Flex>
-
                     <Flex flexDirection='row' mt='35px' justify='center' align='center'>
                         <AddIcon fontSize='20px' borderRadius='50%' p='2px' bg='green' color='white' mr='5px'></AddIcon>
                         <Heading fontSize='20px' color='green' fontWeight='600' > Add Round Trips</Heading>
-
                     </Flex>
                     <Flex justify='center' mt='30px'>
                         <Button colorScheme='blue' width='140px'>Search</Button>
                     </Flex>
-
                 </Flex>
-
-
                 <Card maxW='xl' bg='gray.100'>
                     <CardBody>
                         <Image
@@ -142,11 +128,7 @@ const BookFerryPage = () => {
                         </Flex>
                     </CardBody>
                 </Card>
-
-
             </Flex>
-
-
         </>
     )
 }

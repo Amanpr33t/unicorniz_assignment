@@ -53,9 +53,6 @@ const Navbar = () => {
                 </Flex>}
 
             </Flex>
-
-
-
         </>
     )
 }
