@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
 
+import Navbar from "./components/Navbar";
+import LandingPage from "./components/LandingPage";
+import Blog from "./components/Blog";
+import BookFerryPage from "./components/BookFerryPage";
+import { Flex, Spacer, Box, Heading, Text, Image } from '@chakra-ui/react'
+import { Routes, Route } from "react-router-dom"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Box w='100%' >
+        <Navbar />
+        <Routes>
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/bookFerry" element={<BookFerryPage />} />
+        </Routes>
+
+      </Box>
+
+    </>
   );
 }
 
