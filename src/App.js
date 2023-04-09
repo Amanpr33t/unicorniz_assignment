@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import LandingPage from "./components/LandingPage";
 import Blog from "./components/Blog";
 import BookFerryPage from "./components/BookFerryPage";
-import { Flex, Spacer, Box, Heading, Text, Image } from '@chakra-ui/react'
+import {  Box } from '@chakra-ui/react'
 import { Routes, Route } from "react-router-dom"
 function App() {
   return (

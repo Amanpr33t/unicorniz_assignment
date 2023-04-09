@@ -1,8 +1,7 @@
 import React from "react"
-import { Flex, Spacer, Box, Heading, Text, Image, extendTheme, Card, Stack, CardBody, Button, EmailIcon, ArrowForwardIcon, IconButton } from '@chakra-ui/react'
-import { Search2Icon, ArrowUpIcon, ArrowDownIcon, AddIcon } from '@chakra-ui/icons'
+import { Flex,  Heading, Text, Image,  Card, Stack, CardBody } from '@chakra-ui/react'
+import {  AddIcon } from '@chakra-ui/icons'
 import andaman from '../andaman.jpg'
-import { useState } from "react"
 
 const Blog = () => {
 

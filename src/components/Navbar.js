@@ -1,5 +1,5 @@
 import React from "react"
-import { Flex, Spacer, Box, Heading, Text, Image, extendTheme } from '@chakra-ui/react'
+import { Flex, Spacer, Box, Heading, Text, Image } from '@chakra-ui/react'
 import { Search2Icon, ArrowUpIcon, ArrowDownIcon } from '@chakra-ui/icons'
 import andaman from '../andaman.jpg'
 import { useState } from "react"

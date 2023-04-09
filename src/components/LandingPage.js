@@ -1,7 +1,7 @@
 import React from "react"
-import { Flex, Spacer, Box, Heading, Text, Image, Container } from '@chakra-ui/react'
+import { Flex, Box, Heading, Text, Image } from '@chakra-ui/react'
 import andaman_body from '../andaman_body.jpg'
-import { Card, CardHeader, CardBody, CardFooter, SimpleGrid, Button } from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, CardFooter,  Button } from '@chakra-ui/react'
 
 const LandingPage = () => {
 
